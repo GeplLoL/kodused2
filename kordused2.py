@@ -67,7 +67,7 @@ else:
         a = a // 10
         b = b * 10
         b += number
-    print("*Ümberpööratud* arv b")
+    print("*Ümberpööratud* arv b)
     print()
 #''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
     print("Kontrollime Syracuse hüpoteesi") #eemaldasin üleliigse sulguri

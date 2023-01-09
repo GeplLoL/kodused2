@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "kordused2", "kordused2\kordused2.pyproj", "{7570A25A-13D2-4BEE-A2CC-EB213920C869}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7570A25A-13D2-4BEE-A2CC-EB213920C869}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7570A25A-13D2-4BEE-A2CC-EB213920C869}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1E104E90-6044-4096-89A9-2F43D1DDDDD5}
+	EndGlobalSection
+EndGlobal
