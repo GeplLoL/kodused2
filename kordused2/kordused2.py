@@ -29,21 +29,21 @@
 #for x in range (1,30,2):
 #    print(x, end=" ")
 
-print("*** MÄNGUD KÜSIMUSED ***")
+print("*** ИГРЫ С ЧИСЛАМИ ***")
 print()
 #'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 while 1:
     try:
-        a = (abs(int(input("Sisesta täisarv => ")))) #lisatud sulgudes
+        a = (abs(int(input("Введите целое число => ")))) #lisatud sulgudes
         break
     except ValueError:
-         print("See pole täisarv.")
+         print("Это не целое число")
 #'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 if a==0:
-    print("Pole mõtet nulliga midagi teha.")
+    print("Нет смысла ничего делать с нулём")
 else:
 #'''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-    print("Määrake, kui palju paarisnumbreid ja kui palju paarituid")
+    print("Определяем, сколько в числе чётных и сколько нечётных цифр")
     print()
     c=b=a
     paaris = 0 #eemaldasin üleliigse võrdse
@@ -55,11 +55,11 @@ else:
         else:
             paaritu += 1
         b = b // 10 #eemaldas üleliigse taandumise
-    print("Numbrite arv:", paaris) #lisasin luti
-    print("Paaritud numbrid:", paaritu) # lisasin luti
+    print("Чётных цифр:", paaris) #lisasin luti
+    print("Нечётных цифр:", paaritu) # lisasin luti
     print()
 #''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-    print("*Pöörame sisestatud arvu ümber")
+    print("*Переворачиваем* введённое число")
     print()
     b=0 #eemaldas üleliigse taandumise
     while a > 0: #koolonid
@@ -67,15 +67,15 @@ else:
         a = a // 10
         b = b * 10
         b += number
-    print("*Ümberpööratud* arv b")
+    print("*Перевёрнутое* число", b)
     print()
 #''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
-    print("Kontrollime Syracuse hüpoteesi") #eemaldasin üleliigse sulguri
+    print("Проверяем гипотезу Сиракуз") #eemaldasin üleliigse sulguri
     print()
     if c % 2 == 0: #lisatud võrdne
-        print("c - paarisarv. Jagame 2ga.")
+        print("с - чётное число. Делим на 2.")
     else:
-        print("c - paaritu arv. Korrutame 3-ga, lisame 1 ja jagame 2-ga.")
+        print("с - нечётное число. Умножаем на 3, прибавляем 1 и делим на 2.")
     while c != 1:
             if c % 2 == 0: #lisatud võrdne
                     c = c / 2
@@ -83,4 +83,4 @@ else:
                     c = (3*c + 1) / 2
             print(int(c), end=" ") #lisatud sepised
     print()
-    print("Hüpotees on õige")
+    print("Гипотеза верна")
